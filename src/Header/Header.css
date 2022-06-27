@@ -72,7 +72,8 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 width: 100%;
-height: 60%;
+height: 40%;
+gap: 2%;
 /* background-color: rgb(21, 255, 173); */
 border-top: solid 1px rgb(0, 0, 0);
 border-bottom: solid 1px rgb(0, 0, 0);
@@ -83,7 +84,7 @@ border-bottom: solid 1px rgb(0, 0, 0);
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 10%;
+    width: 15%;
     gap: 5px;
 }
 .hot-call-icon{
@@ -94,8 +95,108 @@ border-bottom: solid 1px rgb(0, 0, 0);
     font-size: 13px;
     margin-bottom: 1%;
     font-family: ', sans-serif';
-    font-weight: 400;
+    font-weight: 500;
+    color:rgb(79, 79, 79);
 }
 .hot-call-text h4{
-    color: rgb(0, 149, 255);
+    color: rgb(0, 149, 255);color: rgb(0, 149, 255);
+    margin-top: 4px;
+    font-size: 20px;
+    /* border: solid; */
+
+}
+
+
+.sarch{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 35%;
+    height: 35%;
+    border: solid #07b4fe 2px;
+    border-radius: 50px 50px 50px 50px;
+
+}
+
+.search-icon{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 101%;
+    background-color:  #07b4fe;
+    border-radius: -1px 0px 0px 0px;
+}
+.search-input{
+    width:80%;
+    height: 90%;
+     border: none;
+    outline: none;
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 10px;
+    border-radius: 50px 50px 50px 50px;}
+
+.sarch-button{
+   width: 18%;
+   height: 100.2%;
+   border-color: #07b4fe;
+   color: rgb(255, 255, 255);
+   margin: -0.1%;
+   font-weight:550;
+   border: none;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius:50px ;
+  text-align: center;
+  font-size: medium;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color:  #07b4fe;
+}
+.Header-center-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20% ;
+    height: 100%;
+}
+.Header-center-right-icon{
+    width: 35%;
+    height: 35%;
+}
+.Header-singin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: -6%;
+    padding-top: 6%;
+}
+.Header-singin p{
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+    margin-bottom: -20px;
+}
+.number-favorits,.number-buy{
+    border-radius: 50%;
+    background-color: #07b4fe;
+    color: red;
+    font-size: 11px;
+    width: 20px;
+    height: 15px;
+    text-align: center;
+    z-index: 1000;
+    position: relative;
+}
+
+.number-favorits{
+    right: -18.5%;
+    bottom: 3%;
+}
+.number-buy{
+    right: -20%;
+    bottom: 3%;
 }
