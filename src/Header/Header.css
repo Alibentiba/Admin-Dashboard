@@ -2,14 +2,17 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50%;
-    background-color: bisque;
+    height:250px;
+    /* background-color: bisque; */
 }
 .Header-top{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+    height: 15%;
+    border-top: solid 1px rgb(0, 0, 0);
 }
 .Header-top-left{
     display: flex;
@@ -17,7 +20,7 @@
     align-items: center;
     justify-content: center;
      width: 30%;
-     border: solid 2px;
+     /* border: solid 2px; */
      gap: 3%;
 }
 .Header-top-left button{
@@ -47,4 +50,52 @@
     /* border: solid ; */
     height: 100%;
     
+}
+.Header-top-right{
+    display: flex;
+    gap: 2%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header-top-right span{
+    font-size: 14px;
+    color: rgb(65, 65, 65);
+    font-weight: 400;
+}
+
+/* Header-center */
+.Header-center{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 60%;
+/* background-color: rgb(21, 255, 173); */
+border-top: solid 1px rgb(0, 0, 0);
+border-bottom: solid 1px rgb(0, 0, 0);
+
+}
+.hot-call{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    gap: 5px;
+}
+.hot-call-icon{
+    width: 35px;
+    height:100px;
+}
+.hot-call-text p{
+    font-size: 13px;
+    margin-bottom: 1%;
+    font-family: ', sans-serif';
+    font-weight: 400;
+}
+.hot-call-text h4{
+    color: rgb(0, 149, 255);
 }
