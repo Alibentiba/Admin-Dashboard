@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RiAlertLine } from 'react-icons/ri';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { AiOutlineSearch,AiOutlineUser} from 'react-icons/ai';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { FiShoppingCart } from 'react-icons/fi';
+import { IoIosArrowDown } from 'react-icons/io';
+
+
 import './Header.css'
-// import { Dropdown } from 'react-bootstrap/Dropdown';
 
 const Header = () => {
+  const [option,setoption]=useState('All Categories')
+  const shoseoption=(opname)=>{
+   setoption(opname)
+
+  }
   return (
     <div className='Header'>
 
@@ -36,6 +43,15 @@ const Header = () => {
        </div>
        <div className='sarch'>
         <input type="text" className='search-input' placeholder="Enter keywords to search..."/>
+        
+          <div class="dropdown">
+            <button class="dropbtn">{option}<IoIosArrowDown/></button>
+            <div class="dropdown-content">
+            <a href="#" onClick={()=>shoseoption("link1")}>Link 1</a>
+            <a href="#" onClick={()=>shoseoption("link2")}>Link 2</a>
+            <a href="#"onClick={()=>shoseoption("link3")}>Link 3</a>
+            </div>
+          </div>
         <button className='sarch-button'> <AiOutlineSearch className='search-icon'/></button>
         </div>
         <div className='Header-center-right'>
