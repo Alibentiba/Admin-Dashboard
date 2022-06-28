@@ -1,0 +1,59 @@
+.Header-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 15%;
+    border-top: solid 1px rgb(0, 0, 0);
+}
+.Header-top-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+     width: 30%;
+     /* border: solid 2px; */
+     gap: 3%;
+}
+.Header-top-left button{
+    width: 30%;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(250, 97, 97);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: aliceblue;
+    gap: 2%;
+    font-family: DejaVu Sans Mono, monospace;
+}
+.alert-icon{
+    width: 16px;
+    height:  16px;
+    margin-bottom: 2px;
+}
+
+.Header-top-left span{
+    font-size: 12px;
+    margin-top: -3px;
+    /* border: solid ; */
+    height: 100%;
+    
+}
+.Header-top-right{
+    display: flex;
+    gap: 2%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header-top-right span{
+    font-size: 14px;
+    color: rgb(65, 65, 65);
+    font-weight: 400;
+}
