@@ -23,16 +23,16 @@ const Header_bottom = () => {
               <div className='menu-icon-div'><IoIosMenu className='menu-icon'/>
             </div>{option}<IoIosArrowDown/></button>
             <div className="dropdown-content">
-            <a href="#" onClick={()=>shoseoption("link1")}>Link 1</a>
-            <a href="#" onClick={()=>shoseoption("link2")}>Link 2</a>
-            <a href="#"onClick={()=>shoseoption("link3")}>Link 3</a>
+            <a href="#" className='dropdown-link' onClick={()=>shoseoption("link1")}>Link 1</a>
+            <a href="#" className='dropdown-link' onClick={()=>shoseoption("link2")}>Link 2</a>
+            <a href="#"className='dropdown-link' onClick={()=>shoseoption("link3")}>Link 3</a>
             </div> </div>
-      <a href="">Home</a>
-      <a href="">Features</a>
-      <a href="">Shop</a>
-      <a href="">Blog</a>
-      <a href="">About Us</a>
-      <a href="">Contact Us</a>
+      <li href="">Home</li>
+      <li href="">Features</li>
+      <li href="">Shop</li>
+      <li href="">Blog</li>
+      <li href="">About Us</li>
+      <li href="">Contact Us</li>
       
     </div>
   )
