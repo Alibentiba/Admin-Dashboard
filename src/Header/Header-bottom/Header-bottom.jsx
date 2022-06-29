@@ -18,7 +18,7 @@ const Header_bottom = () => {
 <img src="https://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/megamenu/icons/sale.png" alt="" />
       </div>
       
-    <div className="dropdown">
+    <div className="dropdown-bottom">
             <button className="dropbtn">
               <div className='menu-icon-div'><IoIosMenu className='menu-icon'/>
             </div>{option}<IoIosArrowDown/></button>

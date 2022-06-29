@@ -3,6 +3,8 @@ import { AiOutlineSearch,AiOutlineUser} from 'react-icons/ai';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { FiShoppingCart } from 'react-icons/fi';
 import { FaPhoneAlt } from 'react-icons/fa';
+import {IoIosArrowDown} from 'react-icons/io';
+
 import "./Header-center.css"
 
 const Header_center = () => {
@@ -19,7 +21,14 @@ const Header_center = () => {
     </div>
     <div className='sarch'>
      <input type="text" className='search-input' placeholder="Enter keywords to search..."/>
-  
+          <div className="dropdown-center" tabindex="1">
+          <buton className='button-center'>ALL Categories<IoIosArrowDown/></buton>
+          <div className="dropdown-content-center" id='123'>
+          <p className='dropdown-text'>kids</p>
+          <p className='dropdown-text'>Elctro</p>
+          <p className='dropdown-text'>Cloths</p>
+          </div>
+  </div>
      <button className='sarch-button'> <AiOutlineSearch className='search-icon'/></button>
      </div>
      <div className='Header-center-right'>
