@@ -6,8 +6,8 @@
     background-color: blue;
 } */
 .carousel {
-    position: fixed;
-    margin-top: -3%;
+    /* position: fixed; */
+    margin-top: -3.22%;
 }
 .carousel-indicators{
     display: none;
