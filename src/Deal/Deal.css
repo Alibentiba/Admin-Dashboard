@@ -1,0 +1,30 @@
+.Deal{
+width: 87%;
+height:75vh;
+background-color: black;
+border: solid;
+display: grid;
+/* row-gap: 5px; */
+/* gap: 10px;
+ */
+ /* grid-gap: 10px; */
+/* column-gap: 5px; */
+grid-template-rows: minmax(242px,30%);
+grid-template-areas:
+"p1 p2 p3"
+"p1 p4 p5";
+}
+.Deaal-baner2-product1{
+grid-area: p1;}
+.Deaal-baner2-product2{
+grid-area: p2;}
+.Deaal-baner2-product3{
+        grid-area: p3;}
+.Deaal-baner2-product4{
+            grid-area: p4;}
+.Deaal-baner2-product5{
+                grid-area: p5;}
+
+.p img{
+    border-radius: 8px;
+}

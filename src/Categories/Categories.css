@@ -1,0 +1,19 @@
+.slick-active {
+    background-color: rgb(42, 165, 46);
+    margin-right: 10px;
+    overflow: hidden;
+    height:300px;
+    width: 100px;
+}
+.slick-slider{
+    width: 70%;
+    height: 100%;
+    background-color: blueviolet;}
+    .sl{
+        width: 100%;
+        height: 300px;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
