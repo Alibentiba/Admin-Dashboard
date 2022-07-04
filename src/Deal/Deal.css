@@ -1,14 +1,7 @@
 .Deal{
 width: 87%;
 height:75vh;
-background-color: black;
-border: solid;
 display: grid;
-/* row-gap: 5px; */
-/* gap: 10px;
- */
- /* grid-gap: 10px; */
-/* column-gap: 5px; */
 grid-template-rows: minmax(242px,30%);
 grid-template-areas:
 "p1 p2 p3"
@@ -27,4 +20,49 @@ grid-area: p2;}
 
 .p img{
     border-radius: 8px;
+}
+figure {
+	width:auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+
+
+
+.hover14 figure {
+	position: relative;
+}
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(92, 92, 92, 0.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(69, 69, 69, 0.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+    
+}
+.hover14 figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+
+	}
 }
