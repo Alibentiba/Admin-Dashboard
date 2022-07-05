@@ -10,16 +10,17 @@ import Deal from './Deal/Deal';
 import Filter from './Filter/Filter';
 import Topproduct from './Topproduct/Topproduct';
 import Toplist from './Toplist/Toplist';
+import Brands from './Brands/Brands';
 function App() {
   return (
     <div className='App'>
-      {/* <Header/>
+      <Header/>
       <Baner/>
       <Policy/> 
        <Deal/>
-<Filter/> */}
-{/* <Topproduct/> */}
+<Filter/>
 <Toplist/>
+<Brands/>
 
     </div>
   )

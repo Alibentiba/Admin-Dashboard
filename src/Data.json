@@ -1,0 +1,151 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Fjallraven - Foldsack",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/catalog/product/cache/b37f1485fc1b751e8a0bcd5c14fd4efa/p/r/product_16_2.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        }
+
+      }, 
+      {
+        "id": 2,
+        "title": "Fjallraven - Foldsack",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/catalog/product/cache/b37f1485fc1b751e8a0bcd5c14fd4efa/p/r/product_19_1.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        }
+
+      },
+      {
+        "id": 3,
+        "title": "Fjallraven - Foldsack ",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/catalog/product/cache/b37f1485fc1b751e8a0bcd5c14fd4efa/p/r/product_11_2.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        }
+
+      },      {
+        "id": 4,
+        "title": "Fjallraven - Foldsack",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/catalog/product/cache/b37f1485fc1b751e8a0bcd5c14fd4efa/p/r/product_6.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        }
+
+      },      {
+        "id": 5,
+        "title": "Fjallraven - Foldsack",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/catalog/product/cache/b37f1485fc1b751e8a0bcd5c14fd4efa/p/r/product_19.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        }
+
+      },      {
+        "id": 6,
+        "title": "Fjallraven - Foldsack",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/catalog/product/cache/b37f1485fc1b751e8a0bcd5c14fd4efa/p/r/product_9_3.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        }
+
+      },      {
+        "id": 7,
+        "title": "Fjallraven - Foldsack",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/catalog/product/cache/b37f1485fc1b751e8a0bcd5c14fd4efa/p/r/product_4_3.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        }
+
+      },      {
+        "id": 8,
+        "title": "Fjallraven - Foldsack",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/catalog/product/cache/b37f1485fc1b751e8a0bcd5c14fd4efa/p/r/product_1.jpg",
+        "rating": {
+          "rate": 3.9,
+          "count": 120
+        }
+
+      }
+    ]
+    ,"Topproducts": [
+        {
+          "id": 1,
+          "title": "Fjallraven - Foldsack",
+          "price": 109.95,
+          "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          }
+        } 
+      ] ,
+      "Brand": [
+        {
+          "id": 1,
+          "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/brand/6.jpg"
+          },
+          {
+            "id": 2,
+            "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/brand/2.jpg"
+            },   {
+              "id": 3,
+              "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/brand/2.jpg"
+              },
+              {
+                "id": 4,
+                "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/brand/4.jpg"
+                },
+                {
+                  "id": 5,
+                  "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/brand/4.jpg"
+                  },
+                  {
+                    "id": 6,
+                    "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/brand/5.jpg"
+                    },
+                    {
+                      "id": 7,
+                      "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/brand/1.jpg"
+                      },
+                      {
+                        "id": 8,
+                        "image": "http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/brand/4.jpg"
+                      }
+        
+      ]
+  }

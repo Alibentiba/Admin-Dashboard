@@ -5,18 +5,18 @@ import { BsStar,BsEye } from 'react-icons/bs';
 import { MdFavoriteBorder,MdContentCopy } from 'react-icons/md';
 
 
-const Topproduct = () => {
+const Topproduct = ({id,title,price,image,category}) => {
   return (
     <div className='Topproduct'>
 
-    <img src="http://magento2.magentech.com/themes/sm_medisine/pub/media/catalog/product/cache/b37f1485fc1b751e8a0bcd5c14fd4efa/p/r/product_16_2.jpg" alt="" />
+    <img src={image} alt="" />
 
-<p className='Topproduct-cat'>FEATURES</p>
-<p className='Topproduct-desc'>Apple Vinegar</p>
+<p className='Topproduct-cat'>{category}</p>
+<p className='Topproduct-desc'>{title}</p>
 <div className='Topproduct-buttons'>
     <div className='Topproduct-info'>
 <p className='Topproduct-rat'><BsStar/><BsStar/></p>
-<p className='Topproduct-prix'>$45674</p>
+<p className='Topproduct-prix'>${price}</p>
 </div>
 <div className='Topproduct-G-buttons'>
 <button className='button-G'><MdFavoriteBorder className='G-icon'/></button>
