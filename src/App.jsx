@@ -11,6 +11,8 @@ import Filter from './Filter/Filter';
 import Topproduct from './Topproduct/Topproduct';
 import Toplist from './Toplist/Toplist';
 import Brands from './Brands/Brands';
+import Footer from '../src/Footer/Footer';
+
 function App() {
   return (
     <div className='App'>
@@ -21,6 +23,7 @@ function App() {
 <Filter/>
 <Toplist/>
 <Brands/>
+<Footer/>
 
     </div>
   )
