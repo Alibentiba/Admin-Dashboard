@@ -154,6 +154,7 @@
         z-index: 100000;
         width: 145px;
         height: auto;
+        margin-top: 2px;
       }
       .button-center{
         width: 100%;

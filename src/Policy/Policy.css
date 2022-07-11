@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 20%;
+    height:30vh;
 }
 .policy-item{
     display: flex;
@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     width: 20%;
-    height: 100%;
+    height: 30%;
     gap: 2%;
 }
 .policy-item-text{
