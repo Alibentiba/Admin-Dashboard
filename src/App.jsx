@@ -13,10 +13,11 @@ import Toplist from './Toplist/Toplist';
 import Brands from './Brands/Brands';
 import Footer from '../src/Footer/Footer';
 import Blog from "../src/Blog/Blog"
+import Login from './Login/Login';
 function App() {
   return (
     <div className='App'>
-      <Header/>
+      {/* <Header/>
       <Baner/>
       <Policy/> 
        <Deal/>
@@ -24,7 +25,8 @@ function App() {
 <Toplist/>
 <Brands/>
 <Blog/>
-<Footer/>
+<Footer/> */}
+<Login/>
 
     </div>
   )
