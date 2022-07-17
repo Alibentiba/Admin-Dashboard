@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react'
 import './Baner.css'
-// import Carousel from 'react-bootstrap/Carousel';
 
 function DarkVariantExample() {
   return (

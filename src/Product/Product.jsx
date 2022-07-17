@@ -2,9 +2,13 @@ import React from 'react'
 import "./Product.css"
 import { BsStar,BsEye } from 'react-icons/bs';
 import { MdFavoriteBorder,MdContentCopy } from 'react-icons/md';
+import {useDispatch} from 'react-redux'
+import { addCart } from "../Redux/Slice"
 
 
-const Product = ({imag,prix,cat,desc,rat,oldprix}) => {
+const Product = ({id,imag,prix,cat,desc,rat,oldprix}) => {
+  const dispatch = useDispatch()
+
   return (
     <div className='Product'>
 
@@ -19,7 +23,7 @@ const Product = ({imag,prix,cat,desc,rat,oldprix}) => {
     </div>
     <div className='product-buttons'>
 
-<button className='add-cart'>ADD to cart</button>
+<button className='add-cart' onClick={() => dispatch(addCart({id,imag,prix,cat,desc,rat,oldprix}))}>ADD to cart</button>
 <div className='product-buttons-group'>
 <button className='G-button'><MdFavoriteBorder className='G-button-icon'/></button>
 <button className='G-button'><MdContentCopy className='G-button-icon'/></button>

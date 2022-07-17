@@ -46,7 +46,7 @@ const Brands = () => {
   <Slider className='slider'{...settings}>
 {
 Brand.map((item,index)=>{
-  return <div className='element'>
+  return <div className='element' key={index}>
   <img src={item.image} alt="gfgh" key={index} className='Brands-img'/>
 </div>
 })

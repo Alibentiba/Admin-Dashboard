@@ -18,7 +18,7 @@ const Policy = () => {
       </div>
     </div>
     <div className='policy-item'>
-    <img class="mark-lazy" src="http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/icon/icon-3.png"  alt=""/>
+    <img className="mark-lazy" src="http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/icon/icon-3.png"  alt=""/>
     <div className='policy-item-text'>
             <h4>Payment Method</h4>
             <p>Secure System</p>
@@ -26,7 +26,7 @@ const Policy = () => {
 
     </div>
     <div className='policy-item'>
-    <img class="mark-lazy" src="http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/icon/icon-4.png" alt=""/>
+    <img className="mark-lazy" src="http://magento2.magentech.com/themes/sm_medisine/pub/media/wysiwyg/icon/icon-4.png" alt=""/>
     <div className='policy-item-text'>
             <h4>Online Support</h4>
             <p>24 hours on day</p>

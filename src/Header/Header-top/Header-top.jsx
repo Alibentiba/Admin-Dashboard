@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Header-top.css"
 import { RiAlertLine } from 'react-icons/ri';
-import { IoIosMenu,IoIosArrowDown} from 'react-icons/io';
+import {IoIosArrowDown} from 'react-icons/io';
 
-const Header_top = () => {
+const Header_Top = () => {
   return (
     <div  className='Header-top'>
     <div className='Header-top-left'>
@@ -14,8 +14,8 @@ const Header_top = () => {
     <span> Store Location</span>
     <span> Track your orders</span> 
 
-    <div className="dropdown-top" tabindex="1">
-  <buton className='dd'>USD<IoIosArrowDown/></buton>
+    <div className="dropdown-top" tabIndex="1">
+  <button className='dd'>USD<IoIosArrowDown/></button>
   <div className="dropdown-content-top" id='123'>
   <p className='dropdown-text-top'>EUR-EURO</p>
   <p className='dropdown-text-top'>DOL-USA</p>
@@ -23,8 +23,8 @@ const Header_top = () => {
   </div>
 </div>
   
-<div className="dropdown-top" tabindex="1">
-  <buton className='dd'>EN<IoIosArrowDown/></buton>
+<div className="dropdown-top" tabIndex="1">
+  <button className='dd'>EN<IoIosArrowDown/></button>
   <div className="dropdown-content-top" id='123'>
   <p className='dropdown-text-top'><img src="http://magento2.magentech.com/themes/sm_medisine/pub/static/version1622432025/frontend/Sm/medisine/en_US/images/flags/flag_french.svg" alt="" /> FRENCH</p>
   <p className='dropdown-text-top'><img src="http://magento2.magentech.com/themes/sm_medisine/pub/static/version1622432025/frontend/Sm/medisine/en_US/images/flags/flag_german.svg" alt="" />German</p>
@@ -42,4 +42,4 @@ const Header_top = () => {
   )
 }
 
-export default Header_top
+export default Header_Top

@@ -3,7 +3,7 @@ import './Header-bottom.css'
 import { IoIosMenu,IoIosArrowDown} from 'react-icons/io';
 
 
-const Header_bottom = () => {
+const Header_Bottom = () => {
   const [option,setoption]=useState('All Categories')
   const shoseoption=(opname)=>{
    setoption(opname)
@@ -38,4 +38,4 @@ const Header_bottom = () => {
   )
 }
 
-export default Header_bottom
+export default Header_Bottom

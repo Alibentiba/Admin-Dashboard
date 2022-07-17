@@ -63,11 +63,13 @@ flex-direction: row;
 .T1{
     font-size: 36px;
     color: #ffff;
+    margin-top: 3%;
+
 }
 .T2{
     font-size: 20px;
     color: #ffff;
-
+    margin-top: -2%;
 }
 
 .footer-center{
