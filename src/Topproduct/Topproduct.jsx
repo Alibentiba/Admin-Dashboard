@@ -5,7 +5,7 @@ import { BsStar,BsEye } from 'react-icons/bs';
 import { MdFavoriteBorder,MdContentCopy } from 'react-icons/md';
 
 
-const Topproduct = ({id,title,price,image,category}) => {
+const Topproduct = ({Id,title,price,image,category}) => {
   return (
     <div className='Topproduct'>
 

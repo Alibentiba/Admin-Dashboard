@@ -20,27 +20,13 @@ const Filter = () => {
         <h3>New Arrivals</h3>
           <Slider className='slider'{...settings}>
             <div className='element'>
-              <Product imag={x} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
+              <Product Id='111' imag={x} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
             </div>
             <div className='element'>
-              <Product imag={y} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
+              <Product Id="222" imag={y} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
             </div>
             <div className='element'>
-              <Product imag={z} prix='456.55' cat="Shop" desc='best prodect from the mai' oldprix="455.23" />
-            </div>
-          </Slider>
-        </div>
-        <div className='sl'>
-        <h3>New Arrivals</h3>
-          <Slider className='slider'{...settings}>
-            <div className='element'>
-              <Product imag={y} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
-            </div>
-            <div className='element'>
-              <Product imag={x} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
-            </div>
-            <div className='element'>
-              <Product imag={z} prix='456.55' cat="Shop" desc='best prodect from the mai' oldprix="455.23" />
+              <Product Id="333"  imag={z} prix='456.55' cat="Shop" desc='best prodect from the mai' oldprix="455.23" />
             </div>
           </Slider>
         </div>
@@ -48,13 +34,27 @@ const Filter = () => {
         <h3>New Arrivals</h3>
           <Slider className='slider'{...settings}>
             <div className='element'>
-              <Product imag={z} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
+              <Product Id="222" imag={y} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
             </div>
             <div className='element'>
-              <Product imag={y} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
+              <Product Id='111'imag={x} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
             </div>
             <div className='element'>
-              <Product imag={x} prix='456.55' cat="Shop" desc='best prodect from the mai' oldprix="455.23" />
+              <Product Id="333" imag={z} prix='456.55' cat="Shop" desc='best prodect from the mai' oldprix="455.23" />
+            </div>
+          </Slider>
+        </div>
+        <div className='sl'>
+        <h3>New Arrivals</h3>
+          <Slider className='slider'{...settings}>
+            <div className='element'>
+              <Product Id="333" imag={z} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
+            </div>
+            <div className='element'>
+              <Product Id="222" imag={y} prix='456.55' cat="Shop" desc='best prodect from the mai'  oldprix="455.23" />
+            </div>
+            <div className='element'>
+              <Product Id="111" imag={x} prix='456.55' cat="Shop" desc='best prodect from the mai' oldprix="455.23" />
             </div>
           </Slider>
         </div>

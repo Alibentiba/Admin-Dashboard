@@ -36,7 +36,7 @@ td,th{
     text-align: center;
     height: 20vh;
     display: flex;
-    width: 15%;
+    width: 10%;
     align-items: center;
     justify-content: flex-start;
     /* padding-left: 1%; */
@@ -46,7 +46,7 @@ td,th{
     font-weight: 500;
   }
   .product-item{
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,11 +57,11 @@ td,th{
   } 
   .TT{   
      border-bottom: solid 1px rgb(189, 189, 189);
-     background-color: rgb(255, 244, 223);
+     background-color: rgb(188, 248, 247);
 
   }
   .product-Qty{
-    width: 30%;
+    width: 70%;
     height: 6vh;
     text-align: center;
     font-size: 16px;
