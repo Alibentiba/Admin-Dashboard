@@ -8,10 +8,13 @@ export const Slice = createSlice({
     },
     reducers: {
         addCart: (state, action) => {
-        
-                    const newCart = [...state.cart, action.payload]
-                    const ss = state.totale + action.payload.price
-                    return { ...state, cart: newCart, totale: ss }
+            const itemIndex=state.cart.findIndex((item)=>item.Id === action.payload.Id);
+
+              if(itemIndex>=0){
+                state.cart[itemIndex].cartQuantity+=1;
+             }else{
+                const tempProduct={...action.payload, cartQuantity:1};
+                state.cart.push(tempProduct);}
     
         },
 
@@ -21,20 +24,37 @@ export const Slice = createSlice({
         },
 
         RemovCart: (state, action) => {
+            const itemIndex=state.cart.findIndex((item)=>item.Id === action.payload.Id);
+            state.cart.splice(itemIndex, 1);
 
-            const newcart=state.cart.filter(item=>item.id!==action.payload.id)
-            const ss = state.totale - action.payload.price
-            return {...state,cart:newcart,totale:ss}}
-            , 
-            setUserLoginDetails: (state, action) => {
-                state.userinfo.name = action.payload.name;
-                state.userinfo.email = action.payload.email;
-                state.userinfo.photo = action.payload.photo;
-              },
+
+        },
+        incre: (state, action) => {
+            const itemIndex=state.cart.findIndex((item)=>item.Id === action.payload.Id);
+            state.cart[itemIndex].cartQuantity+=1
+        },
+        dincre: (state, action) => {
+            const itemIndex=state.cart.findIndex((item)=>item.Id === action.payload.Id);
+            state.cart[itemIndex].cartQuantity-=1 
+
+          
+            
+        }
+
           
 
 
     }
 })
-export const { addCart, lengthcart, RemovCart,selecat,setUserLoginDetails,setSignOutState } = Slice.actions
+export const { addCart, lengthcart, RemovCart,incre,setUserLoginDetails,dincre } = Slice.actions
 export default Slice.reducer
+
+
+
+
+
+
+// addToCart(state,action){
+    
+   
+                                               

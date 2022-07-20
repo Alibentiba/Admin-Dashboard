@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Header-top.css"
 import { RiAlertLine } from 'react-icons/ri';
 import {IoIosArrowDown} from 'react-icons/io';
 
 const Header_Top = () => {
+  const [option,setoption]=useState("EUR")
+  const shoseoption=(opname)=>{
+    setoption(opname)
+ 
+   }
   return (
     <div  className='Header-top'>
     <div className='Header-top-left'>
@@ -15,11 +20,11 @@ const Header_Top = () => {
     <span> Track your orders</span> 
 
     <div className="dropdown-top" tabIndex="1">
-  <button className='dd'>USD<IoIosArrowDown/></button>
+  <button className='dd'>{option}<IoIosArrowDown/></button>
   <div className="dropdown-content-top" id='123'>
-  <p className='dropdown-text-top'>EUR-EURO</p>
-  <p className='dropdown-text-top'>DOL-USA</p>
-  <p className='dropdown-text-top'>DIN-DZ</p>
+  <p className='dropdown-text-top'onClick={()=>shoseoption("EUR")}>EUR-EURO</p>
+  <p className='dropdown-text-top'onClick={()=>shoseoption("DOL")}>DOL-USA</p>
+  <p className='dropdown-text-top'onClick={()=>shoseoption("DIN")}>DIN-DZ</p>
   </div>
 </div>
   

@@ -9,9 +9,9 @@ const Header = () => {
 
   return (
     <div className='Header'>
-{/* <Header_Top/> */}
+<Header_Top/>
 <Header_Center/>
-{/* <Header_Bottom/> */}
+<Header_Bottom/>
 
 
 
