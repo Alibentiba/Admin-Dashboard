@@ -1,5 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import Slice from "./Slice"
-export default configureStore({
-  reducer: {counterstore: Slice}
+
+import Slice from './Slice'
+
+const Store = configureStore({
+  reducer: {userStore: Slice},
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 })
+export default Store
