@@ -29,7 +29,8 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "recharts": "^2.1.16",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "scripts": {
     "start": "react-scripts start",
