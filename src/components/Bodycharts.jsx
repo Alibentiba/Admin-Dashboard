@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsBuilding } from 'react-icons/bs';
 import { HiDocumentText } from 'react-icons/hi';
+import Ecommerce from './Ecommerce';
 
 
 

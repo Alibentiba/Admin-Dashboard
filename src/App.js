@@ -1,27 +1,24 @@
 import React from 'react'
 import { BrowserRouter, Routes ,Route} from 'react-router-dom'
-import Bodycharts from './components/Bodycharts'
-import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 const App = () => {
 return (
 <BrowserRouter>
- <div className='App flex text-white'>
+ <div className='flex'>
     <Sidebar/>
 
 <div className='w-full h-screen flex flex-col'>
     <Navbar/>
-<div className=' h-8/10'>
+
  <Routes>
     <Route />
-    <Route path='/' element={<Bodycharts/>}/>
+    {/* <Route path='/' element={<Bodycharts/>}/> */}
 
  </Routes>
  </div>
+ 
 
-<Footer/> 
-</div>
 
  </div>
  </BrowserRouter>

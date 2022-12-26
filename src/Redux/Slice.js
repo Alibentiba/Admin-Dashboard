@@ -4,7 +4,7 @@ export const Slice = createSlice({
     initialState: {
       user:null,
       ActiveMenu:false,
-      activeChannel:null},
+     },
    
     reducers: {
           LoginA: (state,action) => {
