@@ -1,5 +1,6 @@
 import React from 'react'
 import Bodycharts from './Bodycharts'
+import Charts from './Charts'
 import Feauture from './Feauture'
 
 const Home = () => {
