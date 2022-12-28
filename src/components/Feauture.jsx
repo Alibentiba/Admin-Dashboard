@@ -18,9 +18,9 @@ useEffect(() => {
 
 
   return (
-    <div className='w-full flex flex-col   lg:flex-row'>
+    <div className='w-full flex flex-col gap-4 p-4 lg:flex-row'>
 
-    <div className='w-[100%] m-2  flex flex-col  items-start justify-start shadow-lg shadow-gray-400 p-4 gap-3 md:w-[40%]'>
+    <div className='w-[100%] h-full  flex flex-col  items-start justify-start shadow-lg shadow-gray-400 p-1 gap-3 md:w-[45%]'>
         {/* Top */}
         <div className='text-xl font-semibold text-gray-600 w-full flex justify-between items-center'>
             <span>Totale Revenue</span> 

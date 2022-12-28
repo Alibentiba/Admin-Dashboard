@@ -4,6 +4,7 @@ import Bodycharts from './components/Bodycharts'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Home from './components/Home'
+import BasicTable from './components/Table'
 
 const App = () => {
 return (
@@ -15,6 +16,7 @@ return (
     <BrowserRouter>
 
     <Home/>
+    <BasicTable/>
 
  <Routes>
     <Route />
