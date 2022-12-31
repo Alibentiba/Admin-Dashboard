@@ -7,6 +7,7 @@ import Home from './components/Home'
 import BasicTable from './components/Table'
 import DataTableLazyDemo from './components/ListData'
 import ListData from './components/ListData'
+import Single from './components/Single'
 
 const App = () => {
 return (
@@ -21,6 +22,8 @@ return (
     <Route />
     <Route path='/' element={<Home/>}/>
     <Route path="/ListData" element={<ListData/>}/>
+    <Route path="/user/:id" element={<Single/>}/>
+
  </Routes>
 
  </div>

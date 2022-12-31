@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import {userColumns,userRows} from '../data/products-small'
+import { Link, useParams } from 'react-router-dom';
 // import { iteratorSymbol } from 'immer/dist/internal';
 
 
 
 
 const ListData=()=> {
-
+  const {id}=useParams()
   const handelDelet=()=>{
  
   }
@@ -17,7 +18,7 @@ const Actioncol=[
     return (
       <div className="flex items-center justify-center gap-3 text-lg text-white">
         <button className='px-3 py-1  rounded-md bg-orange-500' onClick={handelDelet()}>Delete</button>
-        <button className='px-3 py-1  rounded-md bg-blue-400'> View</button>
+        <Link to={`/user/:${params.row.id}`}><button className='px-3 py-1  rounded-md bg-blue-400'> View</button></Link>
 
       </div>
     );
