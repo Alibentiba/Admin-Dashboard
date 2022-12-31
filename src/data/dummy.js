@@ -22,6 +22,7 @@ import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
 import product8 from './product8.jpg';
+import { Link } from 'react-router-dom';
 
 export const gridOrderImage = (props) => (
   <div>
@@ -474,7 +475,7 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
+        name:  'Ecommers',
         icon: <FiShoppingBag />,
       },
     ],

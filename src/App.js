@@ -5,32 +5,31 @@ import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Home from './components/Home'
 import BasicTable from './components/Table'
+import DataTableLazyDemo from './components/ListData'
+import ListData from './components/ListData'
 
 const App = () => {
 return (
+   <BrowserRouter>
  <div className='flex'>
     <Sidebar/>
+   
 
 <div className='w-full h-screen flex flex-col gap-3 '>
-    <Navbar/>
-    <BrowserRouter>
-
-    <Home/>
-    <BasicTable/>
-
+<Navbar/> 
  <Routes>
     <Route />
-    {/* <Route path='/' element={<Bodycharts/>}/> */}
-
+    <Route path='/' element={<Home/>}/>
+    <Route path="/ListData" element={<ListData/>}/>
  </Routes>
+
+ </div>
+
+
+
+
+ </div>
  </BrowserRouter>
- </div>
-
-
-
-
- </div>
-   
 )}
 
 export default App

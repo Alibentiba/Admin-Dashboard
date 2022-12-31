@@ -7,6 +7,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
 const BasicTable = () => {
+  
   const rows = [
     {
       id: 1143155,
@@ -60,10 +61,10 @@ const BasicTable = () => {
     },
   ];
   return (
-    <div className="w-full gap-2 flex flex-col p-4">
+    <div className="w-full h-[500px] gap-2 flex flex-col p-4">
       <p className=" text-xl  font-semibold text-gray-600">Latest Transaction</p>
 
-    <TableContainer component={Paper} className="table ">
+    <TableContainer component={Paper} className="table h-full ">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow >

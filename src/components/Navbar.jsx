@@ -8,6 +8,7 @@ import { IoMdNotificationsOutline } from 'react-icons/io';
 import { BiMessage } from 'react-icons/bi';
 import { CgMenuLeftAlt } from 'react-icons/cg';
 import {setActiveMenu} from '../Redux/Slice'
+import { Link } from 'react-router-dom';
 
 
 
@@ -30,7 +31,7 @@ const Navbar = () => {
 
       {/* Left div */}
       <div className='w-full flex items-center justify-end gap-3 text-3xl pr-5'>
-      <button className='flex items-center justify-center gap-1 p-2 rounded-full hover:bg-gray-200 hover:text-blue-400'><GrLanguage/><p className='text-xl font-semibold'>En</p></button>
+     <Link to='/ListData'> <button className='flex items-center justify-center gap-1 p-2 rounded-full hover:bg-gray-200 hover:text-blue-400'><GrLanguage/><p className='text-xl font-semibold'>En</p></button></Link>
       <button className=' p-2 rounded-full hover:bg-gray-200 hover:text-blue-400'><MdOutlineDarkMode/></button>
       <button className='p-2 rounded-full hover:bg-gray-200 hover:text-blue-400'><IoMdNotificationsOutline/></button>
       <button className='p-2 rounded-full hover:bg-gray-200 hover:text-blue-400'> <BiMessage/></button>
