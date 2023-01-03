@@ -19,7 +19,7 @@ const Charts = () => {
   return (
 
     <div className='w-full h-full flex flex-col  shadow-lg shadow-gray-400'>
-      <p className='text-xl font-semibold pl-3 text-gray-500'>Last 6 Month(Totale Revenue)</p>
+      <p className='text-xl font-semibold pl-3 text-gray-300'>Last 6 Month(Totale Revenue)</p>
        <ResponsiveContainer width="100%" height="100%">
        <AreaChart width={730} height={250} data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
             <defs>

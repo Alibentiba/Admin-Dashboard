@@ -1,5 +1,11 @@
 export const userColumns = [
-    { field: "id", headerName: "ID", width: 170 },
+    { field: "id", headerName: "ID", width: 170 ,   renderCell: (params) => {
+      return (
+        <div className="text-white ">
+          {params.row.id}
+        </div>
+      );
+    }, },
     {
       field: "user",
       headerName: "User",
@@ -34,7 +40,7 @@ export const userColumns = [
           <div className={`px-4 py-2 rounded-sm font-medium
            ${params.row.status==="active"&&" text-green-700 bg-green-200"}
           ${params.row.status==="passive"&&" text-red-600 bg-red-200"}
-          ${params.row.status==="pending"&&" text-orange-600 bg-orange-200"}
+          ${params.row.status==="pending"&&" text-orange-800 bg-orange-400"}
           
           
           `}>

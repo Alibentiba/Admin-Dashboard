@@ -472,53 +472,34 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: 'Dashboard',
+    title: 'Main',
     links: [
       {
-        name:  'Ecommers',
+        name:  'Dashbord',
         icon: <FiShoppingBag />,
       },
     ],
   },
 
   {
-    title: 'Pages',
+    title: 'Lists',
     links: [
-      {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
-      },
       {
         name: 'employees',
         icon: <IoMdContacts />,
       },
+      {
+        name: 'orders',
+        icon: <AiOutlineShoppingCart />,
+      },
+     
       {
         name: 'customers',
         icon: <RiContactsLine />,
       },
     ],
   },
-  {
-    title: 'Apps',
-    links: [
-      {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
-      },
-      {
-        name: 'kanban',
-        icon: <BsKanban />,
-      },
-      {
-        name: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
-    ],
-  },
+ 
   {
     title: 'Charts',
     links: [

@@ -22,7 +22,7 @@ useEffect(() => {
 
     <div className='w-[100%] h-full  flex flex-col  items-start justify-start shadow-lg shadow-gray-400 p-1 gap-3 md:h-full lg-[35%]'>
         {/* Top */}
-        <div className='text-xl font-semibold text-gray-600 w-full flex justify-between items-center'>
+        <div className='text-xl font-semibold text-gray-300 w-full flex justify-between items-center'>
             <span>Totale Revenue</span> 
             <HiDotsVertical/>
             </div>
@@ -31,8 +31,8 @@ useEffect(() => {
         <div style={{ width: 180, height: 180 }}>
          <CircularProgressbar value='70' text={`70%`} strokeWidth='5'/>
         </div>
-        <p className='text-lg text-gray-500'>Totale  sales made today</p>
-        <p className='text-4xl font-semibold'>$ {Conter}</p>
+        <p className='text-lg text-gray-300'>Totale  sales made today</p>
+        <p className='text-4xl font-semibold text-gray-300'>$ {Conter}</p>
 
         </div>
         {/* Bottom */}

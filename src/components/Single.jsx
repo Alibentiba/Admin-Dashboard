@@ -84,11 +84,11 @@ const Single = () => {
         <div className='h-1/3 w-full flex gap-4 p-2 '>
 
             {/* Top left */}
-            <div className='h-72 w-1/2 flex pl-3 rounded-lg shadow-lg shadow-gray-400'>
+            <div className='h-72 w-1/2 flex pl-3 rounded-lg shadow-lg shadow-gray-400 text-gray-300'>
 
 
                 <div className='flex flex-col items-start justify-start'>
-                    <p className='text-2xl text-gray-600 font-semibold'>information <button className='text-lg bg-rose-400 px-2 rounded-sm text-black'> Edit</button></p>
+                    <p className='text-2xl  font-semibold'>information <button className='text-lg bg-rose-400 px-2 rounded-sm text-black'> Edit</button></p>
                     <img className='w-[200px] h-[200px] object-cover rounded-full' src="https://fr.web.img4.acsta.net/pictures/17/01/24/15/19/303818.jpg" alt="" />
                 </div>
 
@@ -105,9 +105,9 @@ const Single = () => {
 
 
            {/* Top right */}
-           <div className='w-2/3 h-72  flex flex-col  shadow-lg shadow-gray-400  '>
-                    <p className='text-xl font-semibold pl-3 text-gray-500'>Last 6 Month(Totale Revenue)</p>
-                    <ResponsiveContainer width="100%" height="100%">
+           <div className='w-2/3 h-72  flex flex-col  shadow-lg shadow-gray-400 text-gray-300 '>
+                    <p className='text-xl font-semibold pl-3 '>Last 6 Month(Totale Revenue)</p>
+                    <ResponsiveContainer width="100%" height="100%" className="text-gray-300">
                     <AreaChart width={730} height={250} data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                             <defs>
                             <linearGradient id="Total" x1="0" y1="0" x2="0" y2="1">
@@ -132,38 +132,38 @@ const Single = () => {
 
         
         {/* Bottom */}
-<div className="w-full min-h-[600px] mt-24 gap-4 flex flex-col p-2">
+<div className="w-full min-h-[600px] mt-24 gap-4 flex flex-col p-2 bg-black">
 
-      <p className=" text-xl  font-semibold text-gray-600">Latest Transaction</p>
+      <p className=" text-xl  font-semibold text-gray-300">Latest Transaction</p>
 
-    <TableContainer component={Paper} className="table h-full ">
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableHead>
+    <TableContainer component={Paper} className=" h-full bg-black text-gray-300 ">
+      <Table sx={{ minWidth:650}} aria-label="simple table" className='bg-black'>
+        <TableHead className='text-gray-300 bg-gray-900'>
           <TableRow >
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Tracking ID</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Product</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Customer</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold ">Date</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Amount</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Payment Method</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Status</TableCell>
+            <TableCell className="bg-blue-400 text-gray-300 text-lg font-semibold">Tracking ID</TableCell>
+            <TableCell className="tableCell text-gray-300 text-lg font-semibold">Product</TableCell>
+            <TableCell className="bg-blue-400 text-gray-300 text-lg font-semibold">Customer</TableCell>
+            <TableCell className="tableCell text-gray-300 text-lg font-semibold ">Date</TableCell>
+            <TableCell className="bg-blue-400 text-gray-300 text-lg font-semibold">Amount</TableCell>
+            <TableCell className="tableCell text-gray-300 text-lg font-semibold">Payment Method</TableCell>
+            <TableCell className="bg-blue-400 text-gray-300 text-lg font-semibold">Status</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.id}>
-              <TableCell className="tableCell">{row.id}</TableCell>
-              <TableCell className="tableCell">
+              <TableCell className="bg-black text-white">{row.id}</TableCell>
+              <TableCell className="bg-black text-white">
                 <div className="flex items-center justify-start">
                   <img src={row.img} alt="" className=" w-16 rounded-full object-contain" />
                   {row.product}
                 </div>
               </TableCell>
-              <TableCell className="tableCell">{row.customer}</TableCell>
-              <TableCell className="tableCell">{row.date}</TableCell>
-              <TableCell className="tableCell">{row.amount}</TableCell>
-              <TableCell className="tableCell">{row.method}</TableCell>
-              <TableCell className="tableCell">
+              <TableCell className="bg-black text-white">{row.customer}</TableCell>
+              <TableCell className="bg-black text-white">{row.date}</TableCell>
+              <TableCell className="bg-black text-white">{row.amount}</TableCell>
+              <TableCell className="bg-black text-white">{row.method}</TableCell>
+              <TableCell className="bg-black text-white">
                 <span className={` rounded-md p-2 ${row.status=="Approved" ?'text-green-700 bg-green-200':'text-orange-600 bg-orange-200'}`}>{row.status}</span>
               </TableCell>
             </TableRow>

@@ -61,38 +61,38 @@ const BasicTable = () => {
     },
   ];
   return (
-    <div className="w-full h-[500px] gap-2 flex flex-col p-4">
-      <p className=" text-xl  font-semibold text-gray-600">Latest Transaction</p>
+    <div className="w-full h-[500px] gap-2 flex flex-col p-4 ">
+      <p className=" text-xl  font-semibold text-gray-300">Latest Transaction</p>
 
-    <TableContainer component={Paper} className="table h-full ">
+    <TableContainer component={Paper} className="table h-full bg-black ">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
-          <TableRow >
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Tracking ID</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Product</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Customer</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold ">Date</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Amount</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Payment Method</TableCell>
-            <TableCell className="tableCell text-gray-600 text-lg font-semibold">Status</TableCell>
+          <TableRow className="bg-blue-400">
+            <TableCell className="bg-black text-gray-300 text-lg font-semibold">Tracking ID</TableCell>
+            <TableCell className="tableCell text-gray-300 text-lg font-semibold">Product</TableCell>
+            <TableCell className="bg-black text-gray-300 text-lg font-semibold">Customer</TableCell>
+            <TableCell className="tableCell text-gray-300 text-lg font-semibold ">Date</TableCell>
+            <TableCell className="bg-black text-gray-300 text-lg font-semibold">Amount</TableCell>
+            <TableCell className=" text-gray-300 text-lg font-semibold">Payment Method</TableCell>
+            <TableCell className="bg-black text-gray-300 text-lg font-semibold">Status</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow key={row.id}>
-              <TableCell className="tableCell">{row.id}</TableCell>
-              <TableCell className="tableCell">
-                <div className="flex items-center justify-start">
-                  <img src={row.img} alt="" className=" w-16 rounded-full object-contain" />
+            <TableRow key={row.id} className="bg-black text-white font-semibold">
+              <TableCell className="text-white">{row.id}</TableCell>
+              <TableCell className="text-white">
+                <div className="flex items-center justify-start gap-2">
+                  <img src={row.img} alt="" className=" w-[80px] h-[80px] rounded-full object-cover" />
                   {row.product}
                 </div>
               </TableCell>
-              <TableCell className="tableCell">{row.customer}</TableCell>
-              <TableCell className="tableCell">{row.date}</TableCell>
-              <TableCell className="tableCell">{row.amount}</TableCell>
-              <TableCell className="tableCell">{row.method}</TableCell>
-              <TableCell className="tableCell">
-                <span className={` rounded-md p-2 ${row.status=="Approved" ?'text-green-700 bg-green-200':'text-orange-600 bg-orange-200'}`}>{row.status}</span>
+              <TableCell className="text-white">{row.customer}</TableCell>
+              <TableCell className="text-white">{row.date}</TableCell>
+              <TableCell className="text-white">{row.amount}</TableCell>
+              <TableCell className="text-white">{row.method}</TableCell>
+              <TableCell className="text-white">
+                <span className={` rounded-md p-2 ${row.status=="Approved" ?'text-green-700 bg-green-200':'text-orange-200 bg-orange-400'}`}>{row.status}</span>
               </TableCell>
             </TableRow>
           ))}
