@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaDashcube } from 'react-icons/fa';
-import { AiFillCloseCircle,AiOutlineLogout } from 'react-icons/ai';
-import { BsFillSquareFill,BsSquare } from 'react-icons/bs';
+import { AiFillCloseCircle } from 'react-icons/ai';
 import { Button } from 'primereact/button';
 
 
@@ -67,9 +66,11 @@ const Sidebar = () => {
 </div>  
 <div className=' flex  flex-col gap-4 items-start p-4 '>
 
- <Button label="Logout" className="px-5 py-1 rounded-sm text-gray-900 text-lg bg-gray-300" />
-
-</div>
+ {/* <Button label="Logout" className="px-5 py-1 rounded-sm  text-lg bg-gray-300" /> */}
+ {/* <Button variant="contained" color=''>Logout</Button> */}
+ <Button variant="outlined" color="error">
+ Logout
+</Button></div>
   </div>
 
   )

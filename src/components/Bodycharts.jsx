@@ -5,6 +5,7 @@ import { TbCurrencyDollar } from 'react-icons/tb';
 import { MdAccountBalanceWallet,MdOutlineShoppingBasket } from 'react-icons/md';
 import { FiUsers } from 'react-icons/fi';
 import CountUp from 'react-countup';
+import Stack from '@mui/material/Stack';
 
 
 
@@ -30,12 +31,12 @@ const Bodycharts = () => {
 
 
   return (
-    <div className='grid grid-cols-1 w-full gap-3 p-3  md:grid-cols-2 lg:grid-cols-4'>
+   <Stack direction={{xs: 'column', md:'row'}} spacing={2} alignItems='center' justifyContent='space-between' sx={{width:"100%"}} px='10px'>
       <Widget title='Users' percentag='34' number={Users} icone={<FiUsers/>} bgcolor='#ffc4d5' color='#ff1c5c'/>
       <Widget title='Orders' percentag='34' number={Orders} icone={<MdOutlineShoppingBasket/>} bgcolor='#faddaa' color='#faa30c'/>
       <Widget title='Eranings' percentag='34' number={Eranings} icone={<TbCurrencyDollar/>} bgcolor='#d3fcae' color='#76f705'/>
       <Widget title='balance' percentag='34' number={balance} icone={<MdAccountBalanceWallet/>} bgcolor='#e9c2fc' color='#a702fa'/>
-    </div>
+    </Stack>
   )
 }
 

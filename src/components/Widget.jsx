@@ -1,32 +1,47 @@
 import React from 'react'
 import { IoIosArrowUp } from 'react-icons/io';
+import Box from '@mui/material/Box';
+import { Stack, Typography } from '@mui/material';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 
 
 
 const Widget = ({title,percentag,number,icone,bgcolor,color}) => {
   return (
-    <div className=' border-[1px] rounded-lg shadow-lg shadow-gray-400 h-40 flex flex-col items-start justify-between p-3'>
+    <Box flexDirection='column' border='solid 1px white' width="25%" borderRadius='5px' px='5px' py='8px'>
    
-    <div className='flex text-xl justify-between items-center w-full '>
-        <p className='text-gray-300 font-semibold uppercase'>{title}</p>
-        <p className='text-green-400 flex items-center justify-center'><IoIosArrowUp/>{percentag}%</p>
-    </div>
+    <Stack  direction='row' alignItems='center' justifyContent='space-between' sx={{width:'100%'}}>
+             <Typography variant='h6' textTransform='uppercase' color='white'>
+                {title}
+                </Typography>
+                
+             <Typography  variant='body1' color='green'>
+               {percentag}%
+            </Typography>
+    </Stack>
 
-    <div className='text-4xl font-normal text-white w-full'>
-        <p className='flex gap-1'>
-            <span className={`${title=='Users'?'hidden':'flex' }`}>$</span>
-            {number}</p>
-    </div>
 
-    <div className='flex text-md justify-between items-center w-full font-semibold '>
-         <p className='text-gray-300'>See All {title}</p>
-         <p style={{background:bgcolor,color:color}}
+    <Stack fontSize='500' color='white'>
+        
+            <Typography variant='h6'>
+            {number}
+            </Typography>
+    </Stack>
+
+    <Stack  direction='row' alignItems='center' justifyContent='space-between' sx={{width:'100%'}}>
+        <Typography  color="white" variant='body1' >See All {title}</Typography>
+        <Typography 
+        style={{background:bgcolor,color:color}}
          className='rounded-md p-2'>
             {icone}
-            </p>
-    </div>
+            </Typography>
+    </Stack>
 
-  </div>
+  </Box>
   )
 }
 

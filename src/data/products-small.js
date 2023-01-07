@@ -9,7 +9,7 @@ export const userColumns = [
     {
       field: "user",
       headerName: "User",
-      width: 260,
+      width: 280,
       
       renderCell: (params) => {
         return (
@@ -23,13 +23,13 @@ export const userColumns = [
     {
       field: "email",
       headerName: "Email",
-      width: 230,
+      width: 250,
     },
   
     {
       field: "age",
       headerName: "Age",
-      width: 150,
+      width: 200,
     },
     {
       field: "status",

@@ -9,6 +9,12 @@ import { BiMessage } from 'react-icons/bi';
 import { CgMenuLeftAlt } from 'react-icons/cg';
 import {setActiveMenu} from '../Redux/Slice'
 import { Link } from 'react-router-dom';
+import Badge from '@mui/material/Badge';
+import MailIcon from '@mui/icons-material/Mail';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import IconButton from '@mui/material/IconButton';
+import LanguageIcon from '@mui/icons-material/Language';
 
 
 
@@ -30,14 +36,29 @@ const Navbar = () => {
       </div>
 
       {/* Left div */}
+      
       <div className='w-full flex items-center justify-end gap-3 text-3xl pr-5 text-white'>
+     
      <Link to='/ListData'> 
-        <button className=' bg-white flex items-center justify-center gap-1 p-2 rounded-full hover:bg-gray-200 hover:text-blue-400 '><GrLanguage /></button>
-     </Link>
-      <button className=' p-2 rounded-full hover:bg-gray-200 hover:text-blue-400'><MdOutlineDarkMode/></button>
-      <button className='p-2 rounded-full hover:bg-gray-200 hover:text-blue-400'><IoMdNotificationsOutline/></button>
-      <button className='p-2 rounded-full hover:bg-gray-200 hover:text-blue-400'> <BiMessage/></button>
-      <button className='p-2 rounded-full hover:bg-gray-200 hover:text-blue-400 lg:hidden '> <CgMenuLeftAlt onClick={()=>{dispatch(setActiveMenu(!ActiveMenuS))}}/></button>
+     <IconButton sx={{color:'white'}}  aria-label="upload picture" component="label">
+         <LanguageIcon fontSize='large' />
+      </IconButton >
+           </Link>
+
+      <IconButton sx={{color:'white'}} aria-label="upload picture" component="label">
+         <Brightness4Icon fontSize='large'   />
+      </IconButton>
+
+
+
+      <Badge color="error" badgeContent={99}>
+        <NotificationsIcon fontSize='large' />
+      </Badge> 
+
+      <Badge color="error" badgeContent={99}>
+        <MailIcon fontSize='large'  />
+      </Badge>  
+          <button className='p-2 rounded-full hover:bg-gray-200 hover:text-blue-400 lg:hidden '> <CgMenuLeftAlt onClick={()=>{dispatch(setActiveMenu(!ActiveMenuS))}}/></button>
       <img className='w-[45px] object-cover rounded-full h-[45px] hidden md:flex'
       src="https://static.wikia.nocookie.net/disney/images/3/3e/Denzel_Washington.jpg/revision/latest?cb=20191227233245"/>
 
